@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.button {
+    display: flex;
+    max-width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: flex;
+    background-color: black;
+    height: 31.25px;
+    width: 500px;
+}
+
+.grid2 {
+    display: flex;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    flex: 1;
+}
+
+div.grid2:hover {
+    background-color: grey;
+}
