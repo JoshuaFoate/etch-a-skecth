@@ -41,6 +41,6 @@ body {
     flex: 1;
 }
 
-div.grid2:hover {
+button.grid2:hover {
     background-color: grey;
 }

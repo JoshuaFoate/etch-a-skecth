@@ -5,8 +5,12 @@ for (let i = 1; i <= 16; i++) {
     let grid = document.createElement('div');
     grid.classList.add('grid');
     for (let j = 1; j <= 16; j++) {
-        let grid2 = document.createElement('div');
+        const grid2 = document.createElement('button');
         grid2.classList.add('grid2');
+        grid2.addEventListener('click', function() {
+            console.log('hello');
+            grid2.style.backgroundColor = 'grey';
+        })
         grid.appendChild(grid2);
     }
     gridContainer.appendChild(grid);
@@ -16,7 +20,7 @@ for (let i = 1; i <= 16; i++) {
 const gridButton = document.querySelector('.grid-button');
 gridButton.addEventListener('click', () => {
     numSquare();
-})
+});
 
 function createGrid(squares) {
     body.removeChild(gridContainer);
@@ -26,8 +30,12 @@ function createGrid(squares) {
         let grid = document.createElement('div');
         grid.classList.add('grid');
         for (let j = 1; j <= squares; j++) {
-            let grid2 = document.createElement('div');
+            const grid2 = document.createElement('button');
             grid2.classList.add('grid2');
+            grid2.addEventListener('click', function() {
+                console.log('hello');
+                grid2.style.backgroundColor = 'grey';
+            })
             grid.appendChild(grid2);
         }
         gridContainer.appendChild(grid);
